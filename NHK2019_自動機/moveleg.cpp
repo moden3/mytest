@@ -61,36 +61,36 @@ void sandwalking() {
 	if (bno.euler.roll > 0) {
 		if (bno.euler.pitch > 0) {
 			if (adjustflag[3] == 0) {
-				adjustz[0] -= sandheight / 3;
-				adjustz[1] -= sandheight / 3;
-				adjustz[2] -= sandheight / 3;
-				adjustz[3] += sandheight;
+				adjustz[0] -= sandheight / 4;
+				adjustz[1] -= sandheight / 4;
+				adjustz[2] -= sandheight / 4;
+				adjustz[3] += sandheight * 3 / 4;
 				adjustflag[3] = 1;
 				cout << "左前up" << endl;
 			}
 			if (adjustflag[3] == 1) {
-				adjustz[0] += sandheight / 3;
-				adjustz[1] -= sandheight;
-				adjustz[2] += sandheight / 3;
-				adjustz[3] += sandheight / 3;
+				adjustz[0] += sandheight / 4;
+				adjustz[1] -= sandheight * 3 / 4;
+				adjustz[2] += sandheight / 4;
+				adjustz[3] += sandheight / 4;
 				adjustflag[1] = 2;
 				cout << "右後down" << endl;
 			}
 		}
 		else {
 			if (adjustflag[0] == 0) {
-				adjustz[0] += sandheight;
-				adjustz[1] -= sandheight / 3;
-				adjustz[2] -= sandheight / 3;
-				adjustz[3] -= sandheight / 3;
+				adjustz[0] += sandheight * 3 / 4;
+				adjustz[1] -= sandheight / 4;
+				adjustz[2] -= sandheight / 4;
+				adjustz[3] -= sandheight / 4;
 				adjustflag[0] = 1;
 				cout << "右前up" << endl;
 			}
 			if (adjustflag[0] == 1) {
-				adjustz[0] += sandheight / 3;
-				adjustz[1] += sandheight / 3;
-				adjustz[2] -= sandheight;
-				adjustz[3] += sandheight / 3;
+				adjustz[0] += sandheight / 4;
+				adjustz[1] += sandheight / 4;
+				adjustz[2] -= sandheight * 3 / 4;
+				adjustz[3] += sandheight / 4;
 				adjustflag[2] = 2;
 				cout << "左後down" << endl;
 			}
@@ -99,36 +99,36 @@ void sandwalking() {
 	else {
 		if (bno.euler.pitch > 0) {
 			if (adjustflag[2] == 0) {
-				adjustz[0] -= sandheight / 3;
-				adjustz[1] -= sandheight / 3;
-				adjustz[2] += sandheight;
-				adjustz[3] -= sandheight / 3;
+				adjustz[0] -= sandheight / 4;
+				adjustz[1] -= sandheight / 4;
+				adjustz[2] += sandheight * 3 / 4;
+				adjustz[3] -= sandheight / 4;
 				adjustflag[2] = 1;
 				cout << "左後up" << endl;
 			}
 			if (adjustflag[2] == 1) {
-				adjustz[0] -= sandheight;
-				adjustz[1] += sandheight / 3;
-				adjustz[2] += sandheight / 3;
-				adjustz[3] += sandheight / 3;
+				adjustz[0] -= sandheight * 3 / 4;
+				adjustz[1] += sandheight / 4;
+				adjustz[2] += sandheight / 4;
+				adjustz[3] += sandheight / 4;
 				adjustflag[0] = 2;
 				cout << "右前down" << endl;
 			}
 		}
 		else {
 			if (adjustflag[1] == 0) {
-				adjustz[0] -= sandheight / 3;
-				adjustz[1] += sandheight;
-				adjustz[2] -= sandheight / 3;
-				adjustz[3] -= sandheight / 3;
+				adjustz[0] -= sandheight / 4;
+				adjustz[1] += sandheight * 3 / 4;
+				adjustz[2] -= sandheight / 4;
+				adjustz[3] -= sandheight / 4;
 				adjustflag[1] = 1;
 				cout << "左後up" << endl;
 			}
 			if (adjustflag[1] == 1) {
-				adjustz[0] += sandheight / 3;
-				adjustz[1] += sandheight / 3;
-				adjustz[2] += sandheight / 3;
-				adjustz[3] -= sandheight;
+				adjustz[0] += sandheight / 4;
+				adjustz[1] += sandheight / 4;
+				adjustz[2] += sandheight / 4;
+				adjustz[3] -= sandheight * 3 / 4;
 				adjustflag[3] = 2;
 				cout << "左前down" << endl;
 			}
@@ -221,7 +221,7 @@ void Output_Coordinate(double x_a, double y_a, double z_a,
 		static double eulersum[3] = { 0,0,0 };
 
 		// zの補正値の設定
-		if (abs(bno.euler.roll) > 4 || abs(bno.euler.roll) > 4) {
+		if (abs(euler3param[0]) > 3 || abs(euler3param[1]) > 3) {
 			sandwalking();
 		}
 		for (int i = 0; i < 3; i++) eulersum[i] += euler3param[i] * angleKp[i];
