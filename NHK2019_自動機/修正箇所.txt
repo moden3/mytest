@@ -1,0 +1,21 @@
+【修正箇所】
+
+・Servo.h
+#include "usingthread.h"を入れる
+
+・Common.h
+"void Body_Up()"の引数の数と名前の大文字小文字が違う
+"void Hip_Shaking()"の引数の数が違う
+
+・Leg.cpp
+指定された足先の座標が脚の長さを超えている場合にエラーが起こるため、
+"if (sqrt(d * d + (height - z) * (height - z)) < r1 + r2)"の条件を付けた
+
+・main.cpp
+最初に"rf.adjust = 0.1; lf.adjust = 0.1; rb.adjust = 0.1; lb.adjust = 0.1;"を付ける
+"void Wait_UB()"関数をコメントアウトする
+"void Distance()"関数をコメントアウトする
+"Set_Angle_Offset"の値をゼロに設定する
+main関数の名前を"void mainsimulation()"にする
+
+・最後に、エラーが出る行をすべてコメントアウトする

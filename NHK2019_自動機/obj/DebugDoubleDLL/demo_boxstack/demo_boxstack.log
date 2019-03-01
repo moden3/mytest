@@ -1,0 +1,5 @@
+﻿  moveleg.cpp
+c:\ode-0.13\ode\nhk2019_自動機\usingthread.h(4): warning C4005: '_USE_MATH_DEFINES': マクロが再定義されました。
+  c:\ode-0.13\ode\nhk2019_自動機\moveleg.cpp: note: '_USE_MATH_DEFINES' の以前の定義を確認してください
+  demo_boxstack.vcxproj -> C:\ode-0.13\ode\NHK2019_自動機\..\..\lib\DebugDoubleDLL\demo_boxstack.exe
+  demo_boxstack.vcxproj -> ..\..\lib\DebugDoubleDLL\demo_boxstack.pdb (部分的な PDB)
