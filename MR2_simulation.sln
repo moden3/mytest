@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MR2", "demo_boxstack.vcxproj", "{F4C12B7D-F5F2-DC43-8AEB-43F9FE5DF50E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		DebugDoubleDLL|x86 = DebugDoubleDLL|x86
+		DebugDoubleLib|x86 = DebugDoubleLib|x86
+		DebugSingleDLL|x86 = DebugSingleDLL|x86
+		DebugSingleLib|x86 = DebugSingleLib|x86
+		ReleaseDoubleDLL|x86 = ReleaseDoubleDLL|x86
+		ReleaseDoubleLib|x86 = ReleaseDoubleLib|x86
+		ReleaseSingleDLL|x86 = ReleaseSingleDLL|x86
+		ReleaseSingleLib|x86 = ReleaseSingleLib|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F4C12B7D-F5F2-DC43-8AEB-43F9FE5DF50E}.DebugDoubleDLL|x86.ActiveCfg = DebugDoubleDLL|Win32
+		{F4C12B7D-F5F2-DC43-8AEB-43F9FE5DF50E}.DebugDoubleDLL|x86.Build.0 = DebugDoubleDLL|Win32
+		{F4C12B7D-F5F2-DC43-8AEB-43F9FE5DF50E}.DebugDoubleLib|x86.ActiveCfg = DebugDoubleLib|Win32
+		{F4C12B7D-F5F2-DC43-8AEB-43F9FE5DF50E}.DebugDoubleLib|x86.Build.0 = DebugDoubleLib|Win32
+		{F4C12B7D-F5F2-DC43-8AEB-43F9FE5DF50E}.DebugSingleDLL|x86.ActiveCfg = DebugSingleDLL|Win32
+		{F4C12B7D-F5F2-DC43-8AEB-43F9FE5DF50E}.DebugSingleDLL|x86.Build.0 = DebugSingleDLL|Win32
+		{F4C12B7D-F5F2-DC43-8AEB-43F9FE5DF50E}.DebugSingleLib|x86.ActiveCfg = DebugSingleLib|Win32
+		{F4C12B7D-F5F2-DC43-8AEB-43F9FE5DF50E}.DebugSingleLib|x86.Build.0 = DebugSingleLib|Win32
+		{F4C12B7D-F5F2-DC43-8AEB-43F9FE5DF50E}.ReleaseDoubleDLL|x86.ActiveCfg = ReleaseDoubleDLL|Win32
+		{F4C12B7D-F5F2-DC43-8AEB-43F9FE5DF50E}.ReleaseDoubleDLL|x86.Build.0 = ReleaseDoubleDLL|Win32
+		{F4C12B7D-F5F2-DC43-8AEB-43F9FE5DF50E}.ReleaseDoubleLib|x86.ActiveCfg = ReleaseDoubleLib|Win32
+		{F4C12B7D-F5F2-DC43-8AEB-43F9FE5DF50E}.ReleaseDoubleLib|x86.Build.0 = ReleaseDoubleLib|Win32
+		{F4C12B7D-F5F2-DC43-8AEB-43F9FE5DF50E}.ReleaseSingleDLL|x86.ActiveCfg = ReleaseSingleDLL|Win32
+		{F4C12B7D-F5F2-DC43-8AEB-43F9FE5DF50E}.ReleaseSingleDLL|x86.Build.0 = ReleaseSingleDLL|Win32
+		{F4C12B7D-F5F2-DC43-8AEB-43F9FE5DF50E}.ReleaseSingleLib|x86.ActiveCfg = ReleaseSingleLib|Win32
+		{F4C12B7D-F5F2-DC43-8AEB-43F9FE5DF50E}.ReleaseSingleLib|x86.Build.0 = ReleaseSingleLib|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5BDF76BD-F8EF-425A-BF3E-4BCF8D1EF42E}
+	EndGlobalSection
+EndGlobal
